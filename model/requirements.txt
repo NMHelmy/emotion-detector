@@ -1,0 +1,21 @@
+# Core data science packages
+pandas
+numpy
+matplotlib
+seaborn
+# plotly
+
+# Machine learning packages
+scikit-learn
+tensorflow
+
+# Image processing
+Pillow
+opencv-python
+scikit-image
+
+# Jupyter support
+jupyter
+ipython
+ipykernel
+

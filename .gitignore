@@ -1,0 +1,62 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+
+# Virtual environment
+.venv/
+venv/
+env/
+emotion_recognition_env/
+model/emotion_recognition_env/
+
+# Environment variables
+.env
+.env.*
+
+# =========================
+# FastAPI / Backend
+# =========================
+backend/__pycache__/
+backend/*.db
+backend/uploads/
+backend/users.db
+
+# =========================
+# Machine Learning
+# =========================
+*.h5
+*.pt
+*.onnx
+*.ckpt
+
+# (Uncomment if you want to exclude the model file)
+# model/face_model.h5
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+build/
+dist/
+
+# npm / yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
