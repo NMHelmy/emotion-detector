@@ -1,70 +1,208 @@
-# Getting Started with Create React App
+# 🎭 Emotion Detector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Emotion Detector is a full-stack AI web application that analyzes facial expressions in images to detect human emotions.  
+It combines a **React frontend**, **FastAPI backend**, and a **deep learning emotion recognition model** to deliver a smooth and intuitive user experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🔐 User authentication (Sign up / Login / Logout)
+- 🖼️ Upload images for emotion analysis
+- 🤖 AI-based facial emotion recognition
+- 📊 Emotion confidence score
+- 🕒 Emotion history per user
+- 🧾 Secure JWT-based API
+- 🎨 Clean and responsive UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Supported Emotions
 
-### `npm test`
+The model predicts one of the following emotions:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Angry  
+- Disgusted  
+- Fear  
+- Happy  
+- Sad  
+- Surprise  
+- Neutral  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗️ System Architecture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+emotion-detector/
+│
+├── backend/                # FastAPI backend
+│   ├── main.py
+│   ├── database.py
+│   └── users.db            # SQLite database (auto-created)
+│
+├── model/
+│   └── face_model.h5       # Trained emotion detection model
+│
+├── src/                    # React frontend
+├── public/
+│
+├── UI Screenshots/         # UI images used in this README
+│
+├── package.json
+└── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
+- React (Create React App)
+- Axios
+- HTML / CSS / JavaScript
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend
+- FastAPI
+- Uvicorn
+- SQLite
+- JWT Authentication
+- Passlib (bcrypt)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Machine Learning
+- TensorFlow / Keras
+- Convolutional Neural Network (CNN)
+- Grayscale facial images (48×48)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
+- **Python 3.11**
+- **Node.js (LTS)**
+- npm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🔧 Backend Setup (FastAPI)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# From project root
+python -m venv .venv
+.venv\Scripts\activate   # Windows
 
-### Analyzing the Bundle Size
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Backend runs at:
+```
+http://127.0.0.1:8000
+```
 
-### Making a Progressive Web App
+### API documentation:
+```
+http://127.0.0.1:8000/docs
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🌐 Frontend Setup (React)
+```bash
+# From project root
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Frontend runs at:
+```
+http://localhost:3000
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔐 Authentication Flow
 
-### `npm run build` fails to minify
+1. User signs up
+2. User logs in
+3. Backend returns a JWT token
+4. Token is stored client-side
+5. Authenticated requests include:
+    Authorization: Bearer <token>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--- 
+
+## 🖼️ Application Screenshots
+
+### 🏠 Home & Authentication
+<p float="left">
+  <img src="UI Screenshots/home_page.png" width="220"/>
+  <img src="UI Screenshots/home_page_logged_in.png" width="220"/>
+  <img src="UI Screenshots/signup.png" width="220"/>
+  <img src="UI Screenshots/login.png" width="220"/>
+</p>
+
+---
+
+### 🤖 Emotion Detection Flow
+<p float="left">
+  <img src="UI Screenshots/loading.png" width="220"/>
+  <img src="UI Screenshots/result.png" width="220"/>
+</p>
+
+---
+
+### 📜 History
+<p float="left">
+  <img src="UI Screenshots/history_logged_in.png" width="220"/>
+  <img src="UI Screenshots/history_not_logged_in.png" width="220"/>
+</p>
+
+---
+
+### ℹ️ About
+<p float="left">
+  <img src="UI Screenshots/about_us.png" width="220"/>
+</p>
+
+---
+
+## 📦 Database
+
+- **SQLite**
+- Database file: `users.db`
+- Automatically created on first backend run
+- Stores:
+  - Users
+  - Encrypted passwords
+  - Emotion analysis history
+  - Uploaded images (BLOBs)
+
+---
+
+## 🎯 Use Cases
+
+- Emotion-aware applications
+- Human-computer interaction demos
+- AI-powered image analysis
+- Portfolio and academic projects
+
+---
+
+## ⚠️ Notes
+
+- TensorFlow requires **Python 3.10 or 3.11**
+- CPU inference supported (GPU optional)
+- Image upload endpoints require authentication
+
+---
+
+## 📌 Future Improvements
+
+- Real-time webcam emotion detection
+- Face detection before emotion classification
+- Improved confidence visualization
+- Dockerized deployment
+- Cloud hosting (AWS / GCP)
