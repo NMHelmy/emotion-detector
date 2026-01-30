@@ -47,7 +47,7 @@ emotion-detector/
 ├── src/                    # React frontend
 ├── public/
 │
-├── UI Screenshots/         # UI images used in this README
+├── ui-screenshots/         # UI images used in this README
 │
 ├── package.json
 └── README.md
@@ -138,34 +138,23 @@ http://localhost:3000
 
 ### 🏠 Home & Authentication
 <p float="left">
-  <img src="UI Screenshots/home_page.png" width="220"/>
-  <img src="UI Screenshots/home_page_logged_in.png" width="220"/>
-  <img src="UI Screenshots/signup.png" width="220"/>
-  <img src="UI Screenshots/login.png" width="220"/>
+  <img src="ui-screenshots/home_page_logged_in.png" height="700" width="900"/>
 </p>
 
 ---
 
 ### 🤖 Emotion Detection Flow
 <p float="left">
-  <img src="UI Screenshots/loading.png" width="220"/>
-  <img src="UI Screenshots/result.png" width="220"/>
+  <img src="ui-screenshots/result.png" height="400" width="600"/>
 </p>
 
 ---
 
 ### 📜 History
 <p float="left">
-  <img src="UI Screenshots/history_logged_in.png" width="220"/>
-  <img src="UI Screenshots/history_not_logged_in.png" width="220"/>
+  <img src="ui-screenshots/history_logged_in.png" height="400" width="600"/>
 </p>
 
----
-
-### ℹ️ About
-<p float="left">
-  <img src="UI Screenshots/about_us.png" width="220"/>
-</p>
 
 ---
 
