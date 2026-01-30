@@ -138,7 +138,7 @@ http://localhost:3000
 
 ### 🏠 Home & Authentication
 <p float="left">
-  <img src="ui-screenshots/home_page_logged_in.png" height="700" width="900"/>
+  <img src="ui-screenshots/home_page_logged_in.png" height="800" width="600"/>
 </p>
 
 ---
