@@ -1,23 +1,23 @@
-# 🎭 Emotion Detector
+# Emotion Detector
 
 Emotion Detector is a full-stack AI web application that analyzes facial expressions in images to detect human emotions.  
 It combines a **React frontend**, **FastAPI backend**, and a **deep learning emotion recognition model** to deliver a smooth and intuitive user experience.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔐 User authentication (Sign up / Login / Logout)
-- 🖼️ Upload images for emotion analysis
-- 🤖 AI-based facial emotion recognition
-- 📊 Emotion confidence score
-- 🕒 Emotion history per user
-- 🧾 Secure JWT-based API
-- 🎨 Clean and responsive UI
+- User authentication (Sign up / Login / Logout)
+- Upload images for emotion analysis
+- AI-based facial emotion recognition
+- Emotion confidence score
+- Emotion history per user
+- Secure JWT-based API
+- Clean and responsive UI
 
 ---
 
-## 🧠 Supported Emotions
+## Supported Emotions
 
 The model predicts one of the following emotions:
 
@@ -31,7 +31,7 @@ The model predicts one of the following emotions:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
 emotion-detector/
@@ -55,7 +55,7 @@ emotion-detector/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React (Create React App)
@@ -76,7 +76,7 @@ emotion-detector/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Python 3.11**
@@ -85,7 +85,7 @@ emotion-detector/
 
 ---
 
-## 🔧 Backend Setup (FastAPI)
+## Backend Setup (FastAPI)
 
 ```bash
 # From project root
@@ -109,7 +109,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🌐 Frontend Setup (React)
+## Frontend Setup (React)
 ```bash
 # From project root
 npm install
@@ -123,7 +123,7 @@ http://localhost:3000
 
 ---
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
 1. User signs up
 2. User logs in
@@ -134,23 +134,23 @@ http://localhost:3000
 
 --- 
 
-## 🖼️ Application Screenshots
+## Application Screenshots
 
-### 🏠 Home & Authentication
+### Home & Authentication
 <p float="left">
   <img src="ui-screenshots/home_page_logged_in.png" height="800" width="600"/>
 </p>
 
 ---
 
-### 🤖 Emotion Detection Flow
+### Emotion Detection Flow
 <p float="left">
   <img src="ui-screenshots/result.png" height="400" width="600"/>
 </p>
 
 ---
 
-### 📜 History
+### History
 <p float="left">
   <img src="ui-screenshots/history_logged_in.png" height="400" width="600"/>
 </p>
@@ -158,7 +158,7 @@ http://localhost:3000
 
 ---
 
-## 📦 Database
+## Database
 
 - **SQLite**
 - Database file: `users.db`
@@ -171,7 +171,7 @@ http://localhost:3000
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 - Emotion-aware applications
 - Human-computer interaction demos
@@ -180,7 +180,7 @@ http://localhost:3000
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - TensorFlow requires **Python 3.10 or 3.11**
 - CPU inference supported (GPU optional)
@@ -188,7 +188,7 @@ http://localhost:3000
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
 - Real-time webcam emotion detection
 - Face detection before emotion classification
